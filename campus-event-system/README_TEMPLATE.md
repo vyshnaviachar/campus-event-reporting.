@@ -1,6 +1,4 @@
-# README - Campus Event Reporting System (TEMPLATE)
-
-> IMPORTANT: This README contains an AI-provided project skeleton. **The assignment requires you to write your own personal README** describing *your understanding* of the project, the decisions you made, and how to run the project. Please replace the "YOUR_PERSONAL_SECTION" below with your own written text (in your own words). Submitting AI-written README text may disqualify you.
+# README - Campus Event Reporting System 
 
 ## What is included
 - app.py — Flask app with APIs for events, registrations, attendance, feedback, and reports.

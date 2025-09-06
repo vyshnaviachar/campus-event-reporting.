@@ -1,35 +1,30 @@
-# README - Campus Event Reporting System 
+Campus Event Reporting System
 
-## What is included
-- app.py — Flask app with APIs for events, registrations, attendance, feedback, and reports.
-- schema.sql — Database schema for SQLite.
-- seed.py — Script to create `campus.db` and insert sample data.
-- queries.sql — Example reporting SQL queries.
-- design_doc.md — Design document for the system.
-- run.sh — Helper script to set up and run the project locally.
+This project is a simple event management and reporting prototype built for the Webknot Campus Drive assignment. It allows colleges to create events, students to register, and admins to track attendance and feedback. Reports can then be generated to see event popularity and student participation.
 
-## How to set up (local machine)
-1. Ensure Python 3.8+ is installed.
-2. Create a virtual environment and activate it:
-   python -m venv venv
-   source venv/bin/activate   # on Windows: venv\\Scripts\\activate
-3. Install requirements:
-   pip install flask
-4. Initialize DB with sample data:
-   python seed.py
-5. Run the app:
-   python app.py
-6. Use curl or Postman to call the endpoints. Example:
-   curl -X GET http://127.0.0.1:5000/reports/event-popularity
+My Understanding:
+The system mainly covers:
+Event creation
+Student registration
+Attendance marking
+Collecting feedback
+Generating reports (event popularity, participation, top students)
 
-## YOUR_PERSONAL_SECTION
-Write here (in your own words):
-- What you built and why.
-- Key design choices and why you made them.
-- How you tested the prototype.
-- Any limitations and next steps you would implement.
-- Attach screenshots of your AI conversation log (required by assignment).
+Tech Stack:
+Flask (Python) – for APIs
+SQLite – for database
+SQL Queries – for reports
 
-## Notes for submission
-- Replace this README with your personally written version before zipping and submitting.
-- Make sure to include AI conversation screenshots separately as required by the assignment.
+How to Run:
+Install dependencies: pip install flask
+Initialize database: python seed.py
+Run server: python app.py
+
+Access reports in browser/Postman, e.g. http://127.0.0.1:5000/reports/event-popularity
+
+Limitations / Next Steps
+No authentication added yet
+UI not included (only backend + APIs)
+Currently SQLite, can be migrated to MySQL/Postgres
+
+Future scope: filters, dashboards, student app UI
